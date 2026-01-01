@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cisco CCNA (200-301) Study Notes | Complete Free Guide</title>
+    <meta name="description"
+        content="Comprehensive free study guide for the Cisco CCNA (200-301) exam. Covers Network Fundamentals, Access, IP Connectivity, Security, and Automation.">
+    <meta name="keywords"
+        content="Cisco CCNA, 200-301, Routing and Switching, Network Fundamentals, IP Connectivity, Automation, Security Fundamentals, Free Study Guide">
+    <meta name="author" content="Shehan">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../../index-style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../favicon.png">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cisco CCNA (200-301) Study Guide</h1>
+
+        <div class="topic-section">
+            <ul class="subtopic-list">
+                <li><a href="../../index.html">Back to Home</a></li>
+            </ul>
+        </div>
+
+        <!-- === Domain 1.0 === -->
+        <div class="topic-section">
+            <h2>Domain 1.0: Network Fundamentals</h2>
+            <ul class="subtopic-list">
+                <li><a href="pages/1.html">Networking Components - 1.1</a></li>
+                <li><a href="pages/2.html">Topology Architectures - 1.2</a></li>
+                <li><a href="pages/3.html">Physical Layer - 1.3</a></li>
+            </ul>
+        </div>
+
+        <!-- === Domain 2.0 === -->
+        <div class="topic-section">
+            <h2>Domain 2.0: Network Access</h2>
+            <ul class="subtopic-list">
+                <li><a href="pages/4.html">VLANs and Trunking - 2.1</a></li>
+                <li><a href="pages/5.html">Spanning Tree Protocol (STP) - 2.2</a></li>
+                <li><a href="pages/6.html">EtherChannel - 2.3</a></li>
+            </ul>
+        </div>
+
+        <!-- === Domain 3.0 === -->
+        <div class="topic-section">
+            <h2>Domain 3.0: IP Connectivity</h2>
+            <ul class="subtopic-list">
+                <li><a href="pages/7.html">Routing Table Components - 3.1</a></li>
+                <li><a href="pages/8.html">Static Routing - 3.2</a></li>
+                <li><a href="pages/9.html">OSPFv2 Fundamentals - 3.3</a></li>
+            </ul>
+        </div>
+
+        <!-- === Domain 4.0 === -->
+        <div class="topic-section">
+            <h2>Domain 4.0: IP Services</h2>
+            <ul class="subtopic-list">
+                <li><a href="pages/10.html">NAT and PAT - 4.1</a></li>
+                <li><a href="pages/11.html">NTP and DNS - 4.2</a></li>
+                <li><a href="pages/12.html">DHCP and SNMP - 4.3</a></li>
+            </ul>
+        </div>
+
+        <!-- === Domain 5.0 === -->
+        <div class="topic-section">
+            <h2>Domain 5.0: Security Fundamentals</h2>
+            <ul class="subtopic-list">
+                <li><a href="pages/13.html">Security Concepts - 5.1</a></li>
+                <li><a href="pages/14.html">Access Control Lists (ACL) - 5.2</a></li>
+                <li><a href="pages/15.html">VPN and Remote Access - 5.3</a></li>
+            </ul>
+        </div>
+
+        <!-- === Domain 6.0 === -->
+        <div class="topic-section">
+            <h2>Domain 6.0: Automation and Programmability</h2>
+            <ul class="subtopic-list">
+                <li><a href="pages/16.html">Automation Concepts - 6.1</a></li>
+                <li><a href="pages/17.html">SDN and Controllers - 6.2</a></li>
+                <li><a href="pages/18.html">REST APIs and JSON - 6.3</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Cisco CCNA Study Guide. All rights reserved.</p>
+            <p>Last Updated: <span id="lastUpdatedDate"></span></p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lastUpdated = new Date(document.lastModified);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('lastUpdatedDate').textContent = lastUpdated.toLocaleDateString('en-US', options);
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+
+</html>

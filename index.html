@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ==================================================================================
+         PRIMARY SEO TAGS
+    ================================================================================== -->
+  <title>Webnotes | Complete Free Notes</title>
+  <meta name="description"
+    content="Comprehensive free study guide for the CompTIA A+ Core 1 (220-1201) exam. Covers Mobile Devices, Networking, Hardware, Virtualization, and Troubleshooting. Perfect for exam preparation.">
+  <meta name="keywords"
+    content="Webnotes, Free Notes, IT Exam Prep, Hardware Troubleshooting, Networking Fundamentals, TCP/IP, Mobile Devices, Virtualization, Cloud Computing, Printers, Practice Notes, Study Material">
+  <meta name="author" content="Shehan">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://shehan-fdo.github.io/webnotes/">
+
+  <!-- ==================================================================================
+         SOCIAL MEDIA OPTIMIZATION
+    ================================================================================== -->
+  <meta property="og:title" content="Webnotes | Complete Free Notes">
+  <meta property="og:description"
+    content="Master IT fundamentals with our structured Webnotes course notes. Covers Hardware, Network, Mobile, and Cloud.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shehan-fdo.github.io/webnotes/">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="Shehan's IT Certification Hub">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Webnotes</h1>
+
+    <div class="topic-section">
+      <h2>CompTia</h2>
+      <ul class="subtopic-list">
+        <li><a href="CompTia/CompTia-A-220-1201-Notes/index.html">CompTia A+</a></li>
+        <li><a href="CompTia/CompTia-Network-220-1202-Notes/index.html">CompTia Network+</a></li>
+        <li><a href="CompTia/CompTia-Security-220-1203-Notes/index.html">CompTia Security+</a></li>
+        <li><a href="CompTia/CompTia-Cloud-220-1204-Notes/index.html">CompTia Cloud+</a></li>
+        <li><a href="CompTia/CompTia-Server-220-1205-Notes/index.html">CompTia Server+</a></li>
+      </ul>
+    </div>
+
+    <div class="topic-section">
+      <h2>Cisco</h2>
+      <ul class="subtopic-list">
+        <li><a href="Cisco/Cisco-CCNA-210-2601-Notes/index.html">Cisco CCNA</a></li>
+        <li><a href="Cisco/Cisco-CCNP-210-2602-Notes/index.html">Cisco CCNP</a></li>
+        <li><a href="Cisco/Cisco-CCIE-210-2603-Notes/index.html">Cisco CCIE</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Webnotes. All rights reserved.</p>
+      <p>Last Updated: <span id="lastUpdatedDate"></span></p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Update Last Modified Date
+      const lastUpdated = new Date(document.lastModified);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('lastUpdatedDate').textContent = lastUpdated.toLocaleDateString('en-US', options);
+
+      // Update Copyright Year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPv4 and IPv6 - Lesson 2.6 | CompTIA A+ Core 1 Notes</title>
+    <meta name="description" content="Free CompTIA A+ Core 1 (220-1201) study notes for Lesson 2.6: IPv4 and IPv6. Perfect for exam preparation.">
+    <link rel="canonical" href="https://shehan-fdo.github.io/CompTIA-A-220-1201-Notes/pages/14.html">
+    <meta property="og:title" content="IPv4 and IPv6 - Lesson 2.6 | CompTIA A+ Notes">
+    <meta property="og:description" content="Master CompTIA A+ Core 1 with our free study guide. Lesson 2.6: IPv4 and IPv6">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IPv4 and IPv6 Addressing</h1>
+            <p>CompTIA A+ 220-1201 - Core 1 | Lesson 2.6</p>
+        </div>
+        <div class="section">
+            <h2>Introduction to IPv4 and IPv6</h2>
+            <ul>
+                <li>Network communication relies on <strong>IP (Internet Protocol)</strong> versions, primarily <strong>IPv4</strong> and <strong>IPv6</strong>.</li>
+                <li>Understanding both protocols is essential for the <strong>A+ exam</strong> and real-world system configuration.</li>
+                <li>While IPv4 and IPv6 share operational similarities, they differ significantly in structure, configuration, and addressing.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>IPv4 Addressing</h2>
+            <ul>
+                <li>IPv4 uses a <strong>32-bit address</strong> format, represented as four decimal numbers separated by periods (e.g., <code>192.168.1.131</code>).</li>
+                <li>Each decimal number is called an <strong>octet</strong> (8 bits), allowing values from <code>0</code> to <code>255</code>.</li>
+                <li>Total IPv4 address combinations: <strong>4.29 billion</strong> (2<sup>32</sup>).</li>
+                <li>IPv4 addresses are divided into:
+                    <ul>
+                        <li><strong>Network portion</strong>: Identifies the network.</li>
+                        <li><strong>Host portion</strong>: Identifies the specific device.</li>
+                    </ul>
+                </li>
+                <li>Limitations:
+                    <ul>
+                        <li>Insufficient addresses for the growing number of internet-connected devices (over <strong>20 billion</strong>).</li>
+                        <li>Solution: <strong>Private IP addresses</strong> and <strong>Network Address Translation (NAT)</strong>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Private IPv4 Address Ranges (RFC 1918)</h2>
+            <ul>
+                <li>Private IP addresses are reserved for internal networks and are not routable on the public internet.</li>
+                <li>Defined in <strong>RFC 1918</strong>, these ranges include:
+                    <ul>
+                        <li><code>10.0.0.0</code> to <code>10.255.255.255</code> (16+ million addresses, common in large networks).</li>
+                        <li><code>172.16.0.0</code> to <code>172.31.255.255</code> (1+ million addresses, mid-sized networks).</li>
+                        <li><code>192.168.0.0</code> to <code>192.168.255.255</code> (65,000+ addresses, common in home networks).</li>
+                    </ul>
+                </li>
+                <li><strong>NAT (Network Address Translation)</strong> allows multiple devices with private IPs to share a single public IP for internet access.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>IPv6 Addressing</h2>
+            <ul>
+                <li>Designed to overcome IPv4 limitations, IPv6 uses a <strong>128-bit address</strong> format.</li>
+                <li>Total IPv6 address combinations: <strong>340 undecillion</strong> (2<sup>128</sup>), eliminating address scarcity.</li>
+                <li>Structure:
+                    <ul>
+                        <li>Represented in <strong>hexadecimal</strong> (e.g., <code>FE80::5D18:652:CFFD:8F52</code>).</li>
+                        <li>Divided into <strong>8 groups of 16 bits</strong> (hextets), separated by colons.</li>
+                        <li>Leading zeros in a hextet can be omitted (e.g., <code>0000</code> becomes <code>0</code>).</li>
+                        <li>Consecutive groups of zeros can be replaced with <code>::</code> (e.g., <code>FE80:0000:0000:0000</code> becomes <code>FE80::</code>).</li>
+                    </ul>
+                </li>
+                <li>IPv6 addresses are divided into:
+                    <ul>
+                        <li><strong>Network prefix</strong> (first 64 bits): Identifies the network.</li>
+                        <li><strong>Interface ID</strong> (last 64 bits): Identifies the device (often derived from MAC address).</li>
+                    </ul>
+                </li>
+                <li>Advantages:
+                    <ul>
+                        <li>No need for NAT due to vast address space.</li>
+                        <li>Simplified subnetting (default subnet mask is <code>/64</code>).</li>
+                        <li>Built-in support for <strong>autoconfiguration</strong> (e.g., SLAAC).</li>
+                    </ul>
+                </li>
+                <li>DNS is critical for IPv6 due to the complexity of memorizing hexadecimal addresses.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Key Differences Between IPv4 and IPv6</h2>
+            <ul>
+                <li><strong>Address Length</strong>:
+                    <ul>
+                        <li>IPv4: 32 bits (4 bytes).</li>
+                        <li>IPv6: 128 bits (16 bytes).</li>
+                    </ul>
+                </li>
+                <li><strong>Address Format</strong>:
+                    <ul>
+                        <li>IPv4: Decimal (e.g., <code>192.168.1.1</code>).</li>
+                        <li>IPv6: Hexadecimal (e.g., <code>2001:0DB8::1</code>).</li>
+                    </ul>
+                </li>
+                <li><strong>Address Space</strong>:
+                    <ul>
+                        <li>IPv4: 4.29 billion addresses.</li>
+                        <li>IPv6: 340 undecillion addresses.</li>
+                    </ul>
+                </li>
+                <li><strong>Configuration</strong>:
+                    <ul>
+                        <li>IPv4: Manual or DHCP.</li>
+                        <li>IPv6: Supports autoconfiguration (SLAAC) and DHCPv6.</li>
+                    </ul>
+                </li>
+                <li><strong>NAT Usage</strong>:
+                    <ul>
+                        <li>IPv4: Relies on NAT for private-to-public translation.</li>
+                        <li>IPv6: NAT is unnecessary due to large address space.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Exam Tips</h2>
+            <ul>
+                <li>Memorize the <strong>private IPv4 ranges</strong> (RFC 1918) and their use cases.</li>
+                <li>Understand the <strong>structure of IPv4 and IPv6 addresses</strong>, including octets, hextets, and notation.</li>
+                <li>Know the purpose of <strong>NAT</strong> and why it is used with IPv4.</li>
+                <li>Recognize the advantages of IPv6, such as <strong>larger address space</strong> and <strong>simplified subnetting</strong>.</li>
+                <li>Be familiar with <strong>IPv6 address compression</strong> (omitting leading zeros and using <code>::</code>).</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>End of Notes</p>
+                        <div class="nav-container">
+                <a href="13.html" class="nav-button">← Previous: Network Devices - 2.5</a>
+                <a href="15.html" class="nav-button">Next: Assigning IP Addresses - 2.6 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

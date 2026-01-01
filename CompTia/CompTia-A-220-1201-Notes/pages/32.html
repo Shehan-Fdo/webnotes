@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Devices - Lesson 3.4 | CompTIA A+ Core 1 Notes</title>
+    <meta name="description" content="Free CompTIA A+ Core 1 (220-1201) study notes for Lesson 3.4: Storage Devices. Perfect for exam preparation.">
+    <link rel="canonical" href="https://shehan-fdo.github.io/CompTIA-A-220-1201-Notes/pages/32.html">
+    <meta property="og:title" content="Storage Devices - Lesson 3.4 | CompTIA A+ Notes">
+    <meta property="og:description" content="Master CompTIA A+ Core 1 with our free study guide. Lesson 3.4: Storage Devices">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Storage Devices</h1>
+            <p>CompTIA A+ 220-1201 - Core 1 | Lesson 3.4</p>
+        </div>
+        <div class="section">
+            <h2>Volatile vs. Non-Volatile Memory</h2>
+            <ul>
+                <li>System memory (RAM) is <strong>volatile</strong>, meaning all data is lost when power is turned off.
+                </li>
+                <li>To retain data without power, <strong>non-volatile storage devices</strong> are required, such as:
+                    <ul>
+                        <li>Hard drives</li>
+                        <li>Solid state drives (SSDs)</li>
+                        <li>Flash drives</li>
+                        <li>Memory cards</li>
+                        <li>Optical drives (CD/DVD/Blu-ray)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hard Drives (HDDs)</h2>
+            <ul>
+                <li><strong>Magnetic storage</strong> devices with spinning platters that store data.</li>
+                <li>Use a <strong>random access</strong> method, allowing immediate data retrieval from any location.
+                </li>
+                <li>Internal components include:
+                    <ul>
+                        <li><strong>Platters</strong>: Spinning disks where data is magnetically stored.</li>
+                        <li><strong>Spindle</strong>: Rotates platters at high speeds (RPM).</li>
+                        <li><strong>Actuator arm</strong>: Moves the <strong>read/write head</strong> across platters to
+                            access data.</li>
+                    </ul>
+                </li>
+                <li>Mechanical components make HDDs prone to failure over time.</li>
+                <li>Must remain <strong>dust-free</strong> to avoid damage.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hard Drive Speeds (RPM)</h2>
+            <ul>
+                <li>Platter rotation speed affects performance:
+                    <ul>
+                        <li><strong>5,400 RPM</strong>: Slower, common in budget or mobile devices.</li>
+                        <li><strong>7,200 RPM</strong>: Standard for desktops.</li>
+                        <li><strong>10,000 RPM</strong>: High-performance drives.</li>
+                        <li><strong>15,000 RPM</strong>: Fastest, used in enterprise environments.</li>
+                    </ul>
+                </li>
+                <li>Higher RPM reduces <strong>latency</strong>, improving read/write speeds.</li>
+                <li>Data access depends on the platter spinning to position the read/write head.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hard Drive Form Factors</h2>
+            <ul>
+                <li><strong>3.5-inch drives</strong>: Common in desktops due to larger size and higher capacity.</li>
+                <li><strong>2.5-inch drives</strong>: Used in laptops and mobile devices for space efficiency.</li>
+                <li>Modern SSDs often use smaller form factors like <strong>M.2</strong> (22mm width).</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Solid State Drives (SSDs)</h2>
+            <ul>
+                <li>Use <strong>non-volatile memory</strong> with no moving parts, making them faster and more durable
+                    than HDDs.</li>
+                <li>Significantly improve system performance due to higher <strong>throughput</strong> and lower
+                    latency.</li>
+                <li>Commonly replace HDDs in modern systems for speed and reliability.</li>
+                <li>Internally, SSDs contain <strong>memory modules</strong> where data is stored electronically.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>SSD Interfaces and Performance</h2>
+            <ul>
+                <li>Traditional SSDs used <strong>SATA</strong> connections, limited to ~6 Gbps throughput (<strong>SATA
+                        3</strong>).</li>
+                <li>To maximize SSD speeds, newer interfaces connect directly to the <strong>PCI Express (PCIe)
+                        bus</strong>:
+                    <ul>
+                        <li><strong>PCIe adapter cards</strong>: Plug SSDs directly into motherboard PCIe slots for
+                            higher speeds (~64 Gbps per lane).</li>
+                        <li><strong>M.2 interface</strong>: Compact form factor for laptops/desktops, supporting PCIe
+                            speeds.</li>
+                    </ul>
+                </li>
+                <li><strong>NVMe (Non-Volatile Memory Express)</strong>: Protocol designed for SSDs to reduce latency
+                    and increase throughput via PCIe.</li>
+                <li>NVMe over M.2 can achieve ~20 Gbps speeds, far exceeding SATA limitations.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>SATA vs. NVMe vs. SAS</h2>
+            <ul>
+                <li><strong>SATA (Serial ATA)</strong>:
+                    <ul>
+                        <li>Uses <strong>AHCI (Advanced Host Controller Interface)</strong> protocol.</li>
+                        <li>Max throughput: 6 Gbps (SATA 3).</li>
+                        <li>Common for HDDs and older SSDs.</li>
+                    </ul>
+                </li>
+                <li><strong>NVMe (Non-Volatile Memory Express)</strong>:
+                    <ul>
+                        <li>Designed for SSDs to leverage PCIe speeds.</li>
+                        <li>Low latency, high throughput (~20 Gbps on M.2).</li>
+                    </ul>
+                </li>
+                <li><strong>SAS (Serial Attached SCSI)</strong>:
+                    <ul>
+                        <li>Serialized version of SCSI for enterprise storage.</li>
+                        <li>Max throughput: ~22.5 Gbps.</li>
+                        <li>Used in high-performance storage arrays with HDDs.</li>
+                        <li>Physically similar to SATA but with different connectors to prevent mismatches.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>M.2 and mSATA Interfaces</h2>
+            <ul>
+                <li><strong>mSATA (mini-SATA)</strong>:
+                    <ul>
+                        <li>Smaller form factor for compact devices.</li>
+                        <li>Limited to SATA speeds (~6 Gbps).</li>
+                        <li>Largely replaced by M.2.</li>
+                    </ul>
+                </li>
+                <li><strong>M.2</strong>:
+                    <ul>
+                        <li>Modern interface for SSDs, supporting both SATA and PCIe/NVMe.</li>
+                        <li>No cables required; plugs directly into motherboard.</li>
+                        <li>Uses <strong>keying</strong> to designate compatibility:
+                            <ul>
+                                <li><strong>B key</strong>: Supports SATA or PCIe x2.</li>
+                                <li><strong>M key</strong>: Supports PCIe x4 (faster speeds).</li>
+                                <li>Some drives support both keys for broader compatibility.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Flash Storage</h2>
+            <ul>
+                <li>Uses <strong>EEPROM (Electrically Erasable Programmable Read-Only Memory)</strong> for non-volatile
+                    storage.</li>
+                <li>Common types:
+                    <ul>
+                        <li><strong>USB flash drives</strong>: Portable, small, and widely used.</li>
+                        <li><strong>CompactFlash (CF)</strong>: Older, larger format for cameras.</li>
+                        <li><strong>SD cards (Secure Digital)</strong>: Used in cameras, phones, and tablets.
+                            <ul>
+                                <li>Variants: <strong>miniSD</strong>, <strong>microSD</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>xD-Picture Card</strong>: Older format for digital cameras.</li>
+                    </ul>
+                </li>
+                <li>Limitations:
+                    <ul>
+                        <li>EEPROM has a finite number of write cycles.</li>
+                        <li>Not ideal for long-term archival storage.</li>
+                        <li>Small size makes them easy to lose.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Optical Drives</h2>
+            <ul>
+                <li>Use <strong>laser technology</strong> to read/write data via microscopic bumps on discs.</li>
+                <li>Common formats:
+                    <ul>
+                        <li><strong>CD-ROM</strong>: ~700 MB capacity.</li>
+                        <li><strong>DVD-ROM</strong>: ~4.7 GB (single-layer), ~8.5 GB (dual-layer).</li>
+                        <li><strong>Blu-ray</strong>: ~25 GB (single-layer), ~50 GB (dual-layer).</li>
+                    </ul>
+                </li>
+                <li>Slower than HDDs/SSDs but useful for archival storage.</li>
+                <li>Declining in use but still relevant for legacy data access.</li>
+                <li>External optical drives can be connected via <strong>USB</strong>.</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>End of Notes</p>
+                        <div class="nav-container">
+                <a href="31.html" class="nav-button">← Previous: Memory Technologies - 3.3</a>
+                <a href="33.html" class="nav-button">Next: RAID - 3.4 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

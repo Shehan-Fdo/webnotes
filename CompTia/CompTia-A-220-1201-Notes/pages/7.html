@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Ports - Lesson 2.1 | CompTIA A+ Core 1 Notes</title>
+    <meta name="description" content="Free CompTIA A+ Core 1 (220-1201) study notes for Lesson 2.1: Common Ports. Perfect for exam preparation.">
+    <link rel="canonical" href="https://shehan-fdo.github.io/CompTIA-A-220-1201-Notes/pages/7.html">
+    <meta property="og:title" content="Common Ports - Lesson 2.1 | CompTIA A+ Notes">
+    <meta property="og:description" content="Master CompTIA A+ Core 1 with our free study guide. Lesson 2.1: Common Ports">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Common TCP and UDP Ports</h1>
+            <p>CompTIA A+ 220-1201 - Core 1 | Lesson 2.1</p>
+        </div>
+        <div class="section">
+            <h2>Introduction to Port Numbers</h2>
+            <ul>
+                <li>Port numbers are essential for <strong>TCP</strong> and <strong>UDP</strong> communication, helping
+                    identify services on a network.</li>
+                <li>Critical for <strong>troubleshooting</strong> communication issues and <strong>firewall
+                        configuration</strong> (firewalls use port numbers to allow or block traffic).</li>
+                <li>Memorizing key port numbers is required for <strong>A+ certification</strong> and becomes intuitive
+                    with practice.</li>
+                <li>Understand the <strong>port number</strong>, <strong>protocol</strong>, and <strong>purpose</strong>
+                    of each service.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>File Transfer Protocol (FTP)</h2>
+            <ul>
+                <li>Used for transferring files between devices across different operating systems.</li>
+                <li><strong>TCP Port 20</strong>: Active data transfer (data channel).</li>
+                <li><strong>TCP Port 21</strong>: Control/administration (command channel).</li>
+                <li>Supports authentication (<strong>username/password</strong>) or <strong>anonymous login</strong>.
+                </li>
+                <li>Features include file listing, renaming, deleting, and directory management.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Secure Shell (SSH) and Telnet</h2>
+            <ul>
+                <li><strong>SSH (Secure Shell)</strong>: Encrypted remote command-line access over <strong>TCP Port
+                        22</strong>.</li>
+                <li>Replaced the insecure <strong>Telnet</strong> protocol for secure administration.</li>
+                <li><strong>Telnet (Telecommunications Network)</strong>: Unencrypted remote access over <strong>TCP
+                        Port 23</strong>.</li>
+                <li>Telnet sends all data in <strong>clear text</strong>, making it insecure for modern use.</li>
+                <li>Always use <strong>SSH</strong> for secure remote administration.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Email Protocols</h2>
+            <ul>
+                <li><strong>SMTP (Simple Mail Transfer Protocol)</strong>: Sends email between servers or from clients
+                    to servers over <strong>TCP Port 25</strong>.</li>
+                <li><strong>POP3 (Post Office Protocol v3)</strong>: Retrieves email to a local client over <strong>TCP
+                        Port 110</strong>.</li>
+                <li><strong>IMAP4 (Internet Message Access Protocol v4)</strong>: Advanced email retrieval with
+                    multi-device synchronization over <strong>TCP Port 143</strong>.</li>
+                <li>IMAP supports <strong>folder management</strong>, <strong>server-side storage</strong>, and
+                    <strong>multi-client access</strong>.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Domain Name System (DNS)</h2>
+            <ul>
+                <li>Translates <strong>domain names</strong> (e.g., <code>example.com</code>) to <strong>IP
+                        addresses</strong> (e.g., <code>192.0.2.1</code>).</li>
+                <li>Uses <strong>UDP Port 53</strong> for standard queries.</li>
+                <li>Critical for internet functionality; often deployed with <strong>redundant DNS servers</strong>.
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Dynamic Host Configuration Protocol (DHCP)</h2>
+            <ul>
+                <li>Automatically assigns <strong>IP addresses</strong>, <strong>subnet masks</strong>, <strong>default
+                        gateways</strong>, and <strong>DNS servers</strong> to devices.</li>
+                <li>Uses <strong>UDP Port 67</strong> (server) and <strong>UDP Port 68</strong> (client).</li>
+                <li>IP addresses are <strong>leased</strong> temporarily; devices can renew or release them.</li>
+                <li>Supports <strong>reserved IP addresses</strong> for specific devices (e.g., printers, servers).</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hypertext Transfer Protocol (HTTP/HTTPS)</h2>
+            <ul>
+                <li><strong>HTTP</strong>: Unencrypted web traffic over <strong>TCP Port 80</strong>.</li>
+                <li><strong>HTTPS</strong>: Encrypted web traffic over <strong>TCP Port 443</strong> (secure version of
+                    HTTP).</li>
+                <li>Most modern websites use <strong>HTTPS</strong> for security.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Server Message Block (SMB) and NetBIOS</h2>
+            <ul>
+                <li><strong>SMB (Server Message Block)</strong>: Used for file/printer sharing in Windows (<strong>TCP
+                        Port 445</strong>).</li>
+                <li>Also known as <strong>CIFS (Common Internet File System)</strong>.</li>
+                <li><strong>NetBIOS</strong>: Older Windows protocol for name resolution and session setup.</li>
+                <ul>
+                    <li><strong>UDP Port 137</strong>: NetBIOS Name Service (similar to DNS).</li>
+                    <li><strong>TCP Port 139</strong>: NetBIOS Session Service (file transfers).</li>
+                </ul>
+                <li>Modern Windows systems use <strong>direct SMB over TCP 445</strong> (NetBIOS-less).</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Lightweight Directory Access Protocol (LDAP)</h2>
+            <ul>
+                <li>Accesses and manages <strong>directory services</strong> (e.g., user databases, organizational
+                    units).</li>
+                <li><strong>LDAP</strong>: Unencrypted over <strong>TCP Port 389</strong>.</li>
+                <li><strong>LDAPS (LDAP Secure)</strong>: Encrypted version (often over <strong>TCP Port 636</strong>).
+                </li>
+                <li>Used in <strong>Microsoft Active Directory</strong> and other directory services.</li>
+                <li>Organizes data into <strong>OUs (Organizational Units)</strong>, <strong>CNs (Common
+                        Names)</strong>, etc.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Remote Desktop Protocol (RDP)</h2>
+            <ul>
+                <li>Provides <strong>remote desktop access</strong> to Windows systems over <strong>TCP Port
+                        3389</strong>.</li>
+                <li>Allows full control of a remote machine or single-application access.</li>
+                <li>Compatible with <strong>Windows, macOS, Linux, and mobile devices</strong>.</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>End of Notes</p>
+                        <div class="nav-container">
+                <a href="6.html" class="nav-button">← Previous: Introduction to IP - 2.1</a>
+                <a href="8.html" class="nav-button">Next: Wireless Network Technologies - 2.2 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

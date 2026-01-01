@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting Hardware - Lesson 5.1 | CompTIA A+ Core 1 Notes</title>
+    <meta name="description" content="Free CompTIA A+ Core 1 (220-1201) study notes for Lesson 5.1: Troubleshooting Hardware. Perfect for exam preparation.">
+    <link rel="canonical" href="https://shehan-fdo.github.io/CompTIA-A-220-1201-Notes/pages/57.html">
+    <meta property="og:title" content="Troubleshooting Hardware - Lesson 5.1 | CompTIA A+ Notes">
+    <meta property="og:description" content="Master CompTIA A+ Core 1 with our free study guide. Lesson 5.1: Troubleshooting Hardware">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Power-On Self-Test (POST) and Hardware Troubleshooting</h1>
+            <p>CompTIA A+ 220-1201 - Core 1 | Lesson 5.1</p>
+        </div>
+        <div class="section">
+            <h2>Power-On Self-Test (POST)</h2>
+            <ul>
+                <li>The <strong>Power-On Self-Test (POST)</strong> is a series of diagnostic tests performed when a
+                    computer is powered on.</li>
+                <li>Checks core components for proper installation and functionality:
+                    <ul>
+                        <li><strong>CPU</strong>: Verifies installation and communication with BIOS.</li>
+                        <li><strong>Memory (RAM)</strong>: Ensures memory modules are detected and operational.</li>
+                        <li><strong>Video subsystem</strong>: Confirms the display adapter is working.</li>
+                        <li><strong>BIOS hardware</strong>: Validates basic input/output system functionality.</li>
+                    </ul>
+                </li>
+                <li>If a problem is detected, the system may display an error message or emit a series of <strong>beep
+                        codes</strong>.</li>
+                <li>Beep codes vary by manufacturer and motherboard; always refer to the manufacturer’s documentation
+                    for interpretation.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Common POST Errors and Troubleshooting</h2>
+            <ul>
+                <li><strong>No Display (Black Screen with Beeps)</strong>:
+                    <ul>
+                        <li>Possible causes: <strong>faulty video subsystem, bad RAM, or CPU issues</strong>.</li>
+                        <li>Check connections, reseat components, or test with known-good hardware.</li>
+                    </ul>
+                </li>
+                <li><strong>Incorrect BIOS Time/Date</strong>:
+                    <ul>
+                        <li>Indicates a <strong>failed CMOS battery</strong> on the motherboard.</li>
+                        <li>Replace the <strong>button-style battery</strong> (e.g., CR2032) to resolve.</li>
+                    </ul>
+                </li>
+                <li><strong>Unexpected Boot Device</strong>:
+                    <ul>
+                        <li>System may attempt to boot from a <strong>USB drive or incorrect storage device</strong>.
+                        </li>
+                        <li>Adjust the <strong>boot order</strong> in BIOS/UEFI settings to prioritize the correct
+                            device.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Windows Stop Errors (Blue Screen of Death - BSOD)</h2>
+            <ul>
+                <li>A <strong>Windows stop error (BSOD)</strong> occurs when the OS encounters an unrecoverable issue.
+                </li>
+                <li>Displays a <strong>stop code</strong> (e.g., <code>0xC0000135</code>) and may reference a faulty
+                    driver or hardware.</li>
+                <li>Troubleshooting steps:
+                    <ul>
+                        <li>Note the <strong>stop code</strong> and search for solutions online.</li>
+                        <li>Use <strong>Last Known Good Configuration</strong> or <strong>System Restore</strong> to
+                            revert recent changes.</li>
+                        <li>Boot into <strong>Safe Mode</strong> to diagnose driver or software conflicts.</li>
+                        <li>Check <strong>Event Viewer</strong> for detailed error logs.</li>
+                        <li>Run <strong>hardware diagnostics</strong> to test components like RAM, CPU, and storage.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Application Errors and Troubleshooting</h2>
+            <ul>
+                <li>Common symptoms:
+                    <ul>
+                        <li>Application crashes or freezes.</li>
+                        <li>Error messages with codes (e.g., <code>Error 47829</code>).</li>
+                        <li>Applications disappearing without warning.</li>
+                    </ul>
+                </li>
+                <li>Troubleshooting tools:
+                    <ul>
+                        <li><strong>Event Viewer</strong>: Logs system and application errors.</li>
+                        <li><strong>Reliability Monitor</strong>: Tracks application crashes and system stability over
+                            time.</li>
+                        <li><strong>Reinstallation</strong>: Uninstall and reinstall the application to resolve
+                            corruption.</li>
+                    </ul>
+                </li>
+                <li>Document error details, including screenshots, for manufacturer support.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Display Issues and Troubleshooting</h2>
+            <ul>
+                <li><strong>Black Screen</strong>:
+                    <ul>
+                        <li>Check <strong>power and video cable connections</strong> (HDMI, DisplayPort, etc.).</li>
+                        <li>Verify the monitor’s <strong>input source</strong> matches the connected cable.</li>
+                        <li>Test with a <strong>known-good monitor</strong> to rule out hardware failure.</li>
+                    </ul>
+                </li>
+                <li><strong>Dim or Unreadable Display</strong>:
+                    <ul>
+                        <li>Adjust <strong>brightness/contrast settings</strong> on the monitor.</li>
+                    </ul>
+                </li>
+                <li><strong>Display Works During POST but Fails in Windows</strong>:
+                    <ul>
+                        <li>Boot into <strong>VGA Mode</strong> (via F8 during startup) to load a generic video driver.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Power Issues and Troubleshooting</h2>
+            <ul>
+                <li><strong>No Power</strong>:
+                    <ul>
+                        <li>Check the <strong>power outlet</strong> and <strong>power cord</strong> for faults.</li>
+                        <li>Use a <strong>multimeter</strong> to test AC (outlet) and DC (power supply) voltages.</li>
+                        <li>Inspect the <strong>power supply unit (PSU)</strong> for failure.</li>
+                    </ul>
+                </li>
+                <li><strong>Fans Spin but No Display</strong>:
+                    <ul>
+                        <li>Indicates a <strong>POST failure</strong>; check <strong>motherboard, CPU, or video
+                                card</strong>.</li>
+                        <li>Test <strong>voltage outputs</strong> from the PSU with a multimeter.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Performance Issues and Troubleshooting</h2>
+            <ul>
+                <li><strong>Slow Performance</strong>:
+                    <ul>
+                        <li>Check <strong>Task Manager</strong> for high CPU, memory, or disk usage.</li>
+                        <li>Update the OS and drivers via <strong>Windows Update</strong>.</li>
+                        <li>Free up <strong>disk space</strong> and defragment (if using HDD).</li>
+                        <li>Disable <strong>power-saving modes</strong> that throttle CPU performance.</li>
+                        <li>Run <strong>anti-virus/anti-malware scans</strong> to detect malicious software.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Overheating and Cooling Issues</h2>
+            <ul>
+                <li>Heat sources in a computer:
+                    <ul>
+                        <li><strong>CPU</strong>, <strong>GPU</strong>, and <strong>memory modules</strong> generate
+                            significant heat.</li>
+                    </ul>
+                </li>
+                <li>Cooling methods:
+                    <ul>
+                        <li><strong>Fans</strong>: Pull in cool air and expel hot air.</li>
+                        <li><strong>Heat sinks</strong>: Dissipate heat from components.</li>
+                        <li>Ensure fans are <strong>clean and unobstructed</strong> to maintain airflow.</li>
+                    </ul>
+                </li>
+                <li>Monitor temperatures using software like <strong>HWMonitor</strong>.</li>
+                <li><strong>Symptoms of Overheating</strong>:
+                    <ul>
+                        <li>System <strong>randomly shuts down</strong> to prevent damage.</li>
+                        <li>Check <strong>Event Viewer</strong> for temperature-related logs.</li>
+                        <li>Inspect <strong>thermal paste</strong> on CPU/GPU and reapply if necessary.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hardware Failures and Physical Damage</h2>
+            <ul>
+                <li><strong>Burning Smell or Smoke</strong>:
+                    <ul>
+                        <li>Immediately <strong>power off</strong> the system to prevent further damage.</li>
+                        <li>Inspect the <strong>motherboard</strong> and components for visible damage.</li>
+                    </ul>
+                </li>
+                <li><strong>Unusual Noises</strong>:
+                    <ul>
+                        <li><strong>Grinding</strong>: Likely a failing <strong>hard drive</strong>.</li>
+                        <li><strong>Rattling</strong>: Loose components (e.g., <strong>heat sink</strong>).</li>
+                        <li><strong>Clicking</strong>: Obstruction in a <strong>fan</strong> or failing hardware.</li>
+                        <li><strong>Popping</strong>: Blown <strong>capacitor</strong> on the motherboard.</li>
+                    </ul>
+                </li>
+                <li><strong>Capacitor Failure</strong>:
+                    <ul>
+                        <li>Look for <strong>bulging or leaking capacitors</strong> on the motherboard.</li>
+                        <li>Replace the <strong>motherboard</strong> or affected component if damaged.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>BIOS/UEFI Configuration and Maintenance</h2>
+            <ul>
+                <li><strong>CMOS Battery Replacement</strong>:
+                    <ul>
+                        <li>Replace the <strong>button battery</strong> (e.g., CR2032) to fix date/time resets.</li>
+                        <li>Modern systems retain BIOS settings even after battery removal.</li>
+                    </ul>
+                </li>
+                <li><strong>Resetting BIOS Settings</strong>:
+                    <ul>
+                        <li>Use a <strong>jumper</strong> on the motherboard to reset BIOS to defaults.</li>
+                        <li>Removing the CMOS battery does not always reset passwords or settings.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>End of Notes</p>
+                        <div class="nav-container">
+                <a href="56.html" class="nav-button">← Previous: Cloud Characteristics - 4.2</a>
+                <a href="58.html" class="nav-button">Next: Troubleshooting Storage Devices - 5.2 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

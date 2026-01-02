@@ -161,6 +161,25 @@ def update_lesson_pages(course_dir, page_info, domain_map):
         write_file(file_path, content)
         print(f"Updated Lesson: {filename} in {course_dir}")
 
+
+def optimize_performance(file_path):
+    """
+    Injects performance optimizations like preconnect tags.
+    """
+    content = read_file(file_path)
+    
+
+    # AdSense Preconnect
+    preconnect_tag = '<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>'
+    
+    # Check if Ads are present but Preconnect is missing
+    if "adsbygoogle.js" in content and preconnect_tag not in content:
+        # Inject before the script or end of head
+         content = content.replace("</head>", f"    {preconnect_tag}\n</head>")
+         write_file(file_path, content)
+         print(f"Optimized (Preconnect): {os.path.basename(file_path)}")
+
+
 def main():
     print("Starting SEO Updates...")
     for course_dir in COURSES:
@@ -168,12 +187,25 @@ def main():
             print(f"Processing {course_dir}...")
             page_info, domain_map = parse_pillar_page(course_dir)
             
+            # Update Pillar Page SEO & Performance
             if page_info:
                 update_pillar_page(course_dir)
+                optimize_performance(os.path.join(BASE_DIR, course_dir, "index.html"))
+                
+                # Update Lessons
                 update_lesson_pages(course_dir, page_info, domain_map)
+                
+                # Optimize Lessons Performance
+                pages_dir = os.path.join(BASE_DIR, course_dir, "pages")
+                if os.path.exists(pages_dir):
+                    for filename in os.listdir(pages_dir):
+                        if filename.endswith(".html"):
+                             optimize_performance(os.path.join(pages_dir, filename))
+
         except Exception as e:
             print(f"Error processing {course_dir}: {e}")
     print("Done.")
+
 
 if __name__ == "__main__":
     main()

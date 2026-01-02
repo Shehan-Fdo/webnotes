@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webnotes.site/sitemap.xml

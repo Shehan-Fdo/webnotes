@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block utility/template files from indexing
+Disallow: /_template/
+Disallow: /*.py$
+Disallow: /generate_sitemap.py
+Disallow: /update_site_seo.py
+
+# Sitemap location
 Sitemap: https://webnotes.site/sitemap.xml
